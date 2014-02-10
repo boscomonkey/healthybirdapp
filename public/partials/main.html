@@ -1,0 +1,27 @@
+<div class="backContainer">
+     <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout {{user.attributes.username}}</a>
+</div>
+
+<div class="container">
+    <blockquote class="oval-speech-border" style="width: 200px;height: 70px;">
+        <p style="font-size:14px;">What do you want to do?</p>
+    </blockquote>
+    <div style="text-align:center;">
+        <img src="./img/bird.png"/>
+    </div>
+    <div class="objectivesHolder">
+        <div class="objectiveHolder">
+            <a ng-href="#/objectives">
+                <button class="btn btn-lg btn-objective">Get Healthy!</button>
+            </a>
+        </div>
+        <div class="objectiveHolder">
+            <a href="#/store">
+                <button class="btn btn-lg btn-objective">Spend Points</button>
+            </a>
+        </div>
+    </div>
+    <div class="pointsHolder">
+        <h2>Points: {{user.attributes.points}}</h2>
+    </div>
+</div>

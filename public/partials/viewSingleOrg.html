@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">{{org.OrgName | uppercase}}</h2>
+    </div>
+    <!-- {{org}} -->
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        
+        <div class="col-sm-12">
+            <div class="mainPaintingName"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div ng-show="org.Description" class="mainPaintingArtist singlePaintingArtist">
+                <p>{{org.Description}}</p>
+            </div>
+            <div class="mainPaintingPrice">
+                <span class="mainPaintingPriceTag">Total Syndicate Backing:</span> <span class="mainPaintingPricePrice">{{org.Backing | noFractionCurrency}}</span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="mainPaintingPrice">
+                <div class="mainPaintingPriceTag">Syndicate Backers:</div>
+                <div>
+                    <button class="btn btn-artprty">BACK THIS ORG</button>
+                </div>
+            </div>
+            <!-- Add Info about the syndicate stuff and follwers -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="mainPaintingName">
+                Active Targets:
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="target in org.targets">
+            <div class="mainArtwork">
+                <a ng-href="#/artpieces/{{target.objectId}}">
+                    <div class="mainPaintingName">{{target.name | uppercase}}</div>
+                    <div class="mainPaintingArtist">{{target.artist | uppercase}}</div>
+                    <div class="mainPaintingHolder">
+                        <img class="mainPainting" ng-src="{{target.image.url}}">
+                    </div>
+                    <div class="mainPaintingPrice">
+                        <span class="mainPaintingPriceTag">PRICE:</span> <span class="mainPaintingPricePrice">{{target.price | noFractionCurrency}}</span></div>
+                    <div class="mainPaintingPercentage">
+                        <div class="artprtyProgressBar">
+                            <div class="artprtyProgress" style="width:{{target.percentage}}%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-artprty">Learn More</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

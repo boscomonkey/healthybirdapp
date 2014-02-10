@@ -1,0 +1,55 @@
+
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">ART PIECES</h2>
+    </div>
+    <div class="">
+        <h4 class="trendingTitle">Art pieces that are currently taking investments</h4>
+    </div>
+    <div class="row createRow">
+        <a href="#/createTarget" class="createLink">Target New Art Piece</a>
+    </div>
+    <div class="row filterRow">
+        <div class="col-sm-12">
+            <!-- add filters here -->
+            <!-- <input class="form-control artSearch" type="text" placeholder="Search"> -->
+        </div>
+    </div>
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        <div class="col-sm-4" ng-repeat="target in targets">
+                <div class="mainArtwork">
+            <a ng-href="#/artpieces/{{target.objectId}}">
+                    <div class="mainPaintingName">{{target.name | uppercase}}</div>
+                    <div class="mainPaintingArtist">{{target.artist | uppercase}}</div>
+                    <div class="mainPaintingHolder">
+                        <img class="mainPainting" ng-src="{{target.image.url}}">
+                    </div>
+                    <div class="mainPaintingPrice">
+                        <span class="mainPaintingPriceTag">PRICE:</span> <span class="mainPaintingPricePrice">{{target.price | noFractionCurrency}}</span></div>
+                    <div class="mainPaintingPercentage">
+                        <div class="artprtyProgressBar">
+                            <div class="artprtyProgress" style="width:{{target.percentage}}%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-artprty">Learn More</button>
+                </div>
+            </a>
+                </div>
+            <div class="mainArtworkLead">
+                LEAD: <a ng-href="#/orgs/{{target.OwnedByOrg.objectId}}">{{target.OwnedByOrg.OrgName | uppercase}}</a>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="viewAll">
+                <a href="#">View More <span class="rotated">&raquo;</span></a>
+            </div>
+        </div>
+    </div>
+    -->
+</div>
+        

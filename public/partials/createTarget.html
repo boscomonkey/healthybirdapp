@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">New Target</h2>
+    </div>
+    <div class="row">
+        <form role="form" class="form-border-left form-horizontal">
+            <!-- show a piece of art as a square and clickable for full -->
+            <!-- <div class="col-sm-4">
+                <div class="singlePaintingHolder">
+                    <img class="singlePainting" ng-src="{{target.image}}">
+                </div>
+            </div> -->
+            <div class="col-sm-6 col-sm-offset-3">
+                <legend>Art Piece Information</legend>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Piece Name:</label>
+                    <input type="text" class="form-control" id="pieceNameInput" placeholder="Enter Art Piece's Name" ng-model="name">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Artists Name</label>
+                    <input type="text" class="form-control" id="artistsName" placeholder="Enter Artists Name" ng-model="artistsName">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Picture</label>
+                    <input type="file" class="form-control" id="picture" placeholder="Select an Image" ng-file-select="onFileSelect($files)">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Year Created</label>
+                    <input type="text" class="form-control" id="priceTarget" placeholder="Enter Price Target" ng-model="yearCreated">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputPassword1">Other Information (optional)</label>
+                    <textarea type="password" class="form-control" id="description" placeholder="Other Information" ng-model="otherInfo"></textarea>
+                </div>
+                <legend>Investment Information</legend>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Art Organization Lead</label>
+                    <select
+                       ng-model="artsOrg"
+                       ng-options="o.OrgName for o in orgs" 
+                    >
+                        <option style="display:none" value="">Select an Organization</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Price Target</label>
+                    <input type="text" class="form-control" id="priceTarget" placeholder="Enter Price Target" ng-model="priceTarget">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Minimum Investment</label>
+                    <input type="text" class="form-control" id="orgInputName" placeholder="Enter Minimum Investment (USD)" ng-model="minInvest">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Initial Investment</label>
+                    <input type="text" class="form-control" id="orgInputName" placeholder="Enter Initial Investment (USD)" ng-model="initialInvestment">
+                </div>
+                <button ng-click="createTarget()" type="button" class="btn btn-sm btn-artprty">Create Target</button>
+            </div>
+        </form>
+    </div>
+</div>

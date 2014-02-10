@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">{{target.name | uppercase}}</h2>
+    </div>
+    <!-- {{target}} -->
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        <div class="col-sm-4 col-sm-offset-2">
+            <div class="singlePaintingHolder">
+                <img class="singlePainting" ng-src="{{target.image.url}}">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="mainPaintingArtist singlePaintingArtist">{{target.ArtistsName | uppercase}}</div>
+            <div class="mainPaintingPrice">
+                <span class="mainPaintingPriceTag">PRICE:</span> <span class="mainPaintingPricePrice">{{target.price | noFractionCurrency}}</span></div>
+            <div class="mainPaintingPrice">
+                <span class="mainPaintingPriceTag">COMMITTED:</span> <span class="mainPaintingPricePrice">{{target.committed | noFractionCurrency}}</span></div>
+            <div class="mainPaintingArtist singlePaintingArtist">
+                ORGANIZATION: <a ng-href="#/orgs/{{target.OwnedByOrg.objectId}}">{{target.OwnedByOrg.OrgName | uppercase}}</a>
+            </div>
+            <div ng-show="target.description" class="mainPaintingArtist singlePaintingArtist">
+                {{target.otherInfo}}
+            </div>
+            <div class="mainPaintingPrice">
+                <span class="mainPaintingPriceTag">Minimum To Join:</span> <span class="mainPaintingPricePrice">{{target.minInvest | noFractionCurrency}}</span>
+            </div>
+            <div ng-show="canInvest">
+                <button type="button" class="btn btn-sm btn-artprty" data-toggle="modal" data-target="#investModal">Join Investment</button>
+            </div>
+            <div class="mainPaintingPrice" ng-hide="canInvest">
+                <span class="mainPaintingPriceTag">Invested:</span> <span class="mainPaintingPricePrice">{{investedAmount | noFractionCurrency}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="investModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Join Investment</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+            <form role="form" class="form-horizontal">
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Investment Amount:</label>
+                    <input type="text" class="form-control" id="pieceNameInput" placeholder="Enter Amount" ng-model="newInvestment">
+                </div>
+            </form>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" ng-click="createInvestment()" class="btn btn-artprty">Invest</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

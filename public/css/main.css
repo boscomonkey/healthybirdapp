@@ -1,0 +1,576 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image:url('../img/HealthyBirdBg.png');
+    background-size:cover;
+}
+
+.mainTitle {
+    text-align:left;
+    font-size:18px;
+    font-weight:500;
+    float:left;
+}
+
+.mainInfoLinks {
+    text-align:center;
+    font-weight:200;
+    color:black;
+}
+
+.mainInfoLinks > a {
+    color: white;
+    text-shadow: 0px 0px 10px #ddd;
+}
+
+.mainHeader {
+    background-color:rgba(245, 145, 84, 1);
+    color:white;
+    height: 50px;
+    padding:15px;
+}
+
+.subTitle {
+    text-align:center;
+    font-weight:100;
+    color:white;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family:"Montserrat";
+    text-shadow: 0px 0px 10px #ddd;
+}
+
+.createSubTitle {
+    text-align:center;
+    font-weight:100;
+    color:#888;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-family:"Montserrat";
+}
+
+.loginbtn {
+    text-align:right;
+    background-color:white;
+    color:rgba(245,84,84,1);
+    border-color:white;
+    float:right;
+    width: 50px;
+    text-align:center;
+    transition: color 0.25s;
+    -webkit-transition: color 0.25s;
+    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+}
+
+.infoLinksRow {
+    padding-bottom:20px;
+}
+
+.mainHeader2 {
+    color:rgba(245,84,84,1);
+    background-color:#eee;
+    height: 50px;
+    padding:15px;
+}
+
+.loginbtn2 {
+    text-align:right;
+    color:white;
+    background-color:rgba(245,84,84,1);
+    border-color:rgba(245,84,84,1);
+    float:right;
+}
+
+.mainArtwork {
+    margin: 0 auto;
+    width: 250px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+    border-radius: 3px;
+    text-align:center;
+    background-color:#FFF;
+    border: 1px solid #ddd;
+    padding:10px;
+}
+
+.mainPainting {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto; 
+    width:100%;
+}
+
+.mainPaintingHolder {
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    margin:0 auto;
+    position: relative;
+    background-color:#eee;
+}
+
+.trendingTitle {
+    font-weight:100;
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.btn-artprty {
+    background-color:rgba(245,84,84,1);
+    color:white;
+    font-family:"Montserrat";
+}   
+
+.btn-artprty:hover, .btn-artprty:focus {
+    background-color:rgba(231, 59, 59, 1);
+    color:white;
+}
+
+.mainPaintingName {
+    color:#888;
+    font-size:24px;
+    font-weight:100;
+    font-family:"Montserrat";
+}
+
+.mainPaintingPrice {
+    font-size:20px;
+    color:#888;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+
+.mainPaintingPricePrice {
+    font-family:"Montserrat";
+}
+
+.mainPaintingPriceTag {
+    font-weight:100;
+}
+
+.mainInfo {
+    background-image:url('../img/background-blur.jpg');
+    background-size:cover;
+    background-position:center center;
+    padding-bottom:20px;
+    padding-top:20px;
+    height:450px;
+}
+
+@media (min-width:679px) {
+    .mainInfo {
+        padding-top:100px;
+    }
+}
+
+.artprtyProgressBar {
+    background-color:#eee;
+    height:10px;
+    width:200px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+.artprtyProgress {
+    width:0%;
+    background-color:rgba(245,84,84,1);
+    height:10px;
+}
+
+.accountInfo {
+    float:right;
+}
+
+.footer {
+    background-color:#eee;
+    color:#888;
+    height: 50px;
+    padding:15px;
+    margin-top:20px;
+}
+
+button { 
+    outline: none !important; 
+}
+
+a, a:hover {
+    text-decoration:none;
+}
+
+.subTitle > a {
+    color:rgba(245,84,84,1);
+    color:white;
+}
+
+.subTitle > a:hover {
+    color:rgba(245,84,84,1);
+    color:white;
+    text-shadow: 0px 0px 10px #aaa;
+}
+
+.btn-howworks {
+    background:transparent;
+    color:#ddd;
+    border-color:#ddd;
+    font-family:"Montserrat";
+}
+
+.btn-howworks:hover, .btn-howworks:focus {
+    background-color:transparent;
+    color:white;
+}
+
+.viewAll {
+    text-align:center;
+    font-size:20px;
+    padding-bottom:20px;
+}
+
+.mainPaintingArtist {
+    color:#888;
+    font-weight:100;
+    font-size:16px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+span.rotated {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.btn-mainInfo {
+    width:200px;
+    margin-bottom:20px;
+    font-size:13px;
+    transition: background-color 0.25s;
+    -webkit-transition: background-color: 0.25s;
+}
+
+.mainArtworkLead {
+    color: #888;
+    text-align:center;
+    padding-bottom:20px;
+    font-size:14px;
+    font-weight:200;
+}
+
+.spacer {
+    height:calc(100% - 50px);
+    float:left;
+    display:block;
+}
+
+.btn-nextcreate {
+    margin-top:20px;
+    width:100px;
+    font-size:14px;
+}
+
+.nextCreateButtonHolder {
+    text-align:center;
+}
+
+.formLabelArtprty {
+    font-weight:200;
+    font-family:"Montserrat"
+}
+
+.otherFormInfo {
+    color:rgba(245,84,84,1);
+    font-family:"Montserrat";
+    font-size:12px;
+}
+
+.otherFormInfoLinks {
+    color:rgba(245,84,84,1);
+    font-family:"Montserrat";
+    font-size:16px;
+}
+
+.singlePainting {
+    max-height:300px;
+    max-width:300px;
+}
+
+.singlePaintingArtist {
+    font-size:22px;
+}
+
+.singlePaintingHolder {
+    text-align:center;
+}
+
+.socialLoginInfo {
+    font-family:"Montserrat";
+    padding-bottom:20px;
+    
+}
+
+.btn-fb {
+    color:white;
+    background-color:#3B5999;
+}
+
+.btn-twtr {
+    color:white;
+    background-color:#4099FF;
+}
+
+.buttonSpacer {
+    padding:5px;
+}
+
+.btn-social {
+    width:130px;
+    text-align:left;
+    font-family:"Montserrat";
+    transition: background-color 0.25s;
+    -webkit-transition: background-color: 0.25s;
+}
+
+.btn-socialIcon {
+    font-size:16px;
+    width:15px;
+    margin-right:10px;
+    float:left;
+    text-align:center;
+}
+
+.accountSubTitle {
+    font-family:"Montserrat";
+    color:#888;
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+@media (min-width:768px) {
+    .form-border-left {
+        padding-left:10px;
+        border-left:1px solid #ddd;
+    }
+}
+
+@media (max-width:767px) {
+    .form-border-left {
+        padding-top:10px;
+        border-top:1px solid #ddd;
+    }
+}
+
+.signInLinks {
+    margin-top:10px;
+}
+
+.social-col {
+    margin-bottom:20px;
+}
+
+.filterRow {
+    margin-bottom:20px;
+}
+
+.artSearch {
+    max-width:400px;
+    margin:0 auto;
+}
+
+.mainTitleLink {
+    color:white;
+}
+
+
+
+.mainTitleLink:hover {
+    color:white;
+}
+
+.loginbtn:hover {
+    background-color:rgba(245,84,84,1);
+    color:white;
+    border-color:white;
+}
+
+.btn-social:hover {
+    color:white;
+}
+
+.btn-twtr:hover {
+    background-color:#337ACC;
+}
+
+.btn-fb:hover {
+    background-color:#30487C;
+}
+
+.btn-social:focus {
+    color:white;
+}
+
+.createRow {
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.btn-spacer {
+    margin-bottom:10px;
+}
+
+
+
+
+
+
+.mainNav {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mainNavLi {
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: center;
+    height: 4em;
+    line-height: 4em;
+    width: 150px;
+}
+
+.borderBottom {
+    
+    border-bottom:1px solid #ddd;
+}
+
+.mainNavLi:hover {
+    background-color:#fafafa;
+    width:150px;
+    height:56px;
+}
+
+.orgInformation {
+    color:#888;
+    font-size:24px;
+    font-weight:100;
+}
+
+.orgInformationHeaders {
+    color:#888;
+    font-weight:100;
+    font-size: 16px;
+}
+
+.orgLink:hover {
+    text-decoration:underline;
+    color:#888
+}
+
+.marginBottom {
+    margin-bottom:20px;
+}
+
+.orgRow {
+    border-top:1px solid #ddd;
+    margin-top: 15px;
+    padding-top:5px;
+}
+
+.createLink {
+    font-weight:100;
+}
+
+.objectiveHolder {
+    margin-top:10px;
+    text-align:center;
+}
+
+.objectivesHolder {
+    margin-top:20px;
+}
+
+.btn-healthybird {
+    width:200px;
+    height:50px;
+    color:white;
+    background-color:#627BC1;
+}
+
+.btn-objective, .btn-objective:focus {
+    width:200px;
+    border:1px solid #627BC1;
+    background-color:white;
+    color:#627BC1;
+    transition: color 0.25s;
+    -webkit-transition: color 0.25s;
+    transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+}
+
+.btn-objective:hover {
+    background-color:#627BC1;
+    color:white;
+}
+
+.btnHolder {
+    position:fixed;
+    bottom:40px;
+    text-align:center;
+    width:100%;
+    float:left;
+}
+
+.btn-get-started, .btn-get-started:focus {
+    width:100px;
+    height:50px;
+    color:white;
+    background-color:#627BC1;
+}
+
+.btn-get-started:hover {
+    color:white;
+    background-color:#465FA2;
+}
+
+.backContainer {
+    background-color:#627BC1;
+    color:white;
+    height:40px;
+    padding:10px;
+}
+
+.pointsHolder {
+    text-align:center;
+    color:white;
+}
+
+.formLabelHealthyBird {
+    color:#444;
+    font-size:16px;
+}
+
+.thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    width: 80%;
+}
+
+/* overrides repeating background for list of exercises */
+.exercise-list {
+    background-color: white;
+    height: none;
+    padding-bottom: 6em;
+}

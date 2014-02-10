@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Healthy Bird</title>
+    
+    <link rel="stylesheet" href="css/app.css"/>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Site CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/speech_bubble.css" rel="stylesheet">
+    
+</head>
+<body>
+<!--
+    <ul class="menu">
+        <li><a href="#/home">home</a></li>
+        <li><a href="#/chat">chat</a></li>
+        <li ng-show-auth="logout,error"><a href="#/login">login</a></li>
+        <li ng-show-auth="login"><a href="#/account">account</a></li>
+    </ul>
+-->
+    <!--
+    <div class="mainHeader">
+        <div class="container">
+            <div ng-show-auth="logout,error" class="mainTitle"><a class="mainTitleLink" href="#/home">Healthy Bird</a></div>
+        </div>
+    </div>
+-->
+    <div style="height:100%;" ng-view></div>
+    
+    <div id="fb-root"></div>
+    <script type="text/javascript" src="//www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

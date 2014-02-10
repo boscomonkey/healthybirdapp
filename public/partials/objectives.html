@@ -1,0 +1,28 @@
+<div class="backContainer">
+    <a href="#/main" style="color:white;">Back</a>
+    <a href="#/home" style="float:right;margin-right:10px;color:white;">Logout {{user.attributes.username}}</a>
+</div>
+
+<div class="container">
+    <blockquote class="oval-speech-border" style="width: 200px;height: 70px;">
+        <p style="font-size:14px;">How do you want to get healthier?</p>
+    </blockquote>
+    <div style="text-align:center;">
+        <img src="./img/bird.png"/>
+    </div>
+    <div class="objectivesHolder">
+        <div class="objectiveHolder">
+            <a href="#/objectives/excercise-more">
+                <button class="btn btn-lg btn-objective">Exercise More</button>
+            </a>
+        </div>
+        <div class="objectiveHolder">
+            <a href="#/objectives/eat-healthy">
+                <button class="btn btn-lg btn-objective">Eat Healthy</button>
+            </a>
+        </div>
+    </div>
+    <div class="pointsHolder">
+        <h2>Points: {{user.attributes.points}}</h2>
+    </div>
+</div>

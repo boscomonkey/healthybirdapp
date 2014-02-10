@@ -1,0 +1,18 @@
+<div class="backContainer">
+    <a href="#/home" style="color:white;">Back</a>
+</div>
+<div style="padding:0px 30px;">
+    <form role="form">
+        <div class="form-group">
+            <label class="formLabelHealthyBird" for="exampleInputEmail1">User Name</label>
+            <input type="name" autocapitalize="off"
+autocorrect="off" class="form-control" id="nameInput" placeholder="Enter name" ng-model="username">
+        </div>
+        <div class="form-group">
+            <label class="formLabelHealthyBird" for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="pass">
+        </div>
+        <p ng-show="err" class="error">{{err}}</p>
+        <button ng-click="createAccount()" class="btn btn-healthybird">SIGN UP</button>
+    </form>
+</div>

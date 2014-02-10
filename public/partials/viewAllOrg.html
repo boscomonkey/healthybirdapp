@@ -1,0 +1,72 @@
+
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">ORGANIZATIONS</h2>
+    </div>
+    <div class="">
+        <h4 class="trendingTitle">Organizations that are collecting and investing in art all over the world</h4>
+    </div>
+    <div class="row createRow">
+        <a class="createLink" href="#/createOrg">Create New Art Org</a>
+    </div>
+    <div class="row filterRow">
+        <div class="col-sm-12">
+            <!-- add filters here -->
+            <!-- <input class="form-control artSearch" type="text" placeholder="Search"> -->
+        </div>
+    </div>
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        <div class="col-sm-4">
+            <div class="orgInformationHeaders">
+                Organization
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformationHeaders">
+                Backers
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformationHeaders">
+                Backed By
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformationHeaders">
+                Active Targets
+            </div>
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+    </div>
+    <div class="row orgRow" ng-repeat="org in orgs">
+        <!-- show a piece of art as a square and clickable for full -->
+        <div class="col-sm-4">
+            <a class="orgLink" ng-href="#/orgs/{{org.objectId}}">
+                <div class="mainPaintingName">{{org.OrgName | uppercase}}</div>
+            </a>
+            <div class="mainPaintingArtist">{{org.Description}}</div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformation">
+                0
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformation">
+                $0
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="orgInformation">
+                0
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-artprty">BACK</button>
+        </div>
+    </div>
+</div>
+        

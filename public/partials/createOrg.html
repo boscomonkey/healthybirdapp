@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="">
+        <h2 class="trendingTitle">Create Organization</h2>
+    </div>
+    <div class="row">
+        <!-- show a piece of art as a square and clickable for full -->
+        
+        <div class="col-sm-8 col-sm-offset-2">
+            <form role="form" class="form-border-left">
+                <div>
+                    <p>Admin: {{userName}}</p>
+                    <p>You will be the initial admin of this organization. Only admins can target investment pieces on behalf of organizations.</p>
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputEmail1">Organization Name</label>
+                    <input type="text" class="form-control" id="orgInputName" placeholder="Enter Organization Name" ng-model="name">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputPassword1">EIN</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Employer Identification Number" ng-model="ein">
+                </div>
+                <div class="form-group">
+                    <label class="formLabelArtprty" for="exampleInputPassword1">Description (optional)</label>
+                    <textarea type="password" class="form-control" id="description" placeholder="Description" ng-model="description"></textarea>
+                </div>
+                <p ng-show="err" class="error">{{err}}</p>
+                <button ng-click="createOrg()" class="btn btn-artprty">CREATE</button>
+            </form>
+        </div>
+    </div>
+</div>
